@@ -1,0 +1,92 @@
+2018-08-14 11:48:46.186  INFO 10976 --- [main] c.j.p.ProjecttrackApplication            : Starting ProjecttrackApplication on DESKTOP-ON3C4E3 with PID 10976 (D:\IDEAProject\ProjectTrack\target\classes started by JiaQi in D:\IDEAProject\ProjectTrack)
+2018-08-14 11:48:46.192  INFO 10976 --- [main] c.j.p.ProjecttrackApplication            : No active profile set, falling back to default profiles: default
+2018-08-14 11:48:46.253  INFO 10976 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c5eefef: startup date [Tue Aug 14 11:48:46 CST 2018]; root of context hierarchy
+2018-08-14 11:48:46.984  WARN 10976 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jiaqi.projecttrack]' package. Please check your configuration.
+2018-08-14 11:48:47.941  INFO 10976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-14 11:48:47.974  INFO 10976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-14 11:48:47.975  INFO 10976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-14 11:48:47.981  INFO 10976 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\JiaQi\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\JiaQi\AppData\Local\Programs\Python\Python36\;C:\Users\JiaQi\AppData\Local\Microsoft\WindowsApps;C:\Users\JiaQi\AppData\Local\GitHubDesktop\bin;.]
+2018-08-14 11:48:48.092  INFO 10976 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-14 11:48:48.095  INFO 10976 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1839 ms
+2018-08-14 11:48:48.174  INFO 10976 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-14 11:48:48.181  INFO 10976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 11:48:48.181  INFO 10976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 11:48:48.181  INFO 10976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 11:48:48.182  INFO 10976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 11:48:48.344  INFO 10976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:48:48.615  INFO 10976 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c5eefef: startup date [Tue Aug 14 11:48:46 CST 2018]; root of context hierarchy
+2018-08-14 11:48:48.684  INFO 10976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto java.lang.String com.jiaqi.projecttrack.controller.DemoController.home()
+2018-08-14 11:48:48.690  INFO 10976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 11:48:48.690  INFO 10976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 11:48:48.723  INFO 10976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:48:48.724  INFO 10976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:48:48.806  WARN 10976 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-08-14 11:48:48.813  INFO 10976 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-14 11:48:48.836  INFO 10976 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-14 11:48:48.844 ERROR 10976 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-08-14 11:50:06.116  INFO 11560 --- [main] c.j.p.ProjecttrackApplication            : Starting ProjecttrackApplication on DESKTOP-ON3C4E3 with PID 11560 (D:\IDEAProject\ProjectTrack\target\classes started by JiaQi in D:\IDEAProject\ProjectTrack)
+2018-08-14 11:50:06.121  INFO 11560 --- [main] c.j.p.ProjecttrackApplication            : The following profiles are active: dev
+2018-08-14 11:50:06.186  INFO 11560 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57a3af25: startup date [Tue Aug 14 11:50:06 CST 2018]; root of context hierarchy
+2018-08-14 11:50:06.910  WARN 11560 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jiaqi.projecttrack]' package. Please check your configuration.
+2018-08-14 11:50:07.780  INFO 11560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-14 11:50:07.813  INFO 11560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-14 11:50:07.813  INFO 11560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-14 11:50:07.820  INFO 11560 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\JiaQi\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\JiaQi\AppData\Local\Programs\Python\Python36\;C:\Users\JiaQi\AppData\Local\Microsoft\WindowsApps;C:\Users\JiaQi\AppData\Local\GitHubDesktop\bin;.]
+2018-08-14 11:50:07.935  INFO 11560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-14 11:50:07.935  INFO 11560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1749 ms
+2018-08-14 11:50:08.030  INFO 11560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-14 11:50:08.038  INFO 11560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 11:50:08.038  INFO 11560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 11:50:08.046  INFO 11560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 11:50:08.046  INFO 11560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 11:50:08.222  INFO 11560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:50:08.531  INFO 11560 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57a3af25: startup date [Tue Aug 14 11:50:06 CST 2018]; root of context hierarchy
+2018-08-14 11:50:08.617  INFO 11560 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto java.lang.String com.jiaqi.projecttrack.controller.DemoController.home()
+2018-08-14 11:50:08.628  INFO 11560 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 11:50:08.628  INFO 11560 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 11:50:08.665  INFO 11560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:50:08.677  INFO 11560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 11:50:08.780  WARN 11560 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-08-14 11:50:08.784  INFO 11560 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-14 11:50:08.808  INFO 11560 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-14 11:50:08.812 ERROR 11560 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

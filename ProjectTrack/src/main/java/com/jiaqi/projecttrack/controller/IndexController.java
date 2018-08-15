@@ -22,7 +22,7 @@ public class IndexController {
     @RequestMapping("/")
     String toIndex(Model model) {
         User user = new User();
-        user.setId(11010123);
+        user.setId(2351);
         userService.insert(user);
         return "index";
     }
